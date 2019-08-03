@@ -1,0 +1,15 @@
+{
+  "name": "express_portfolio_2019",
+  "version": "1.0.0",
+  "description": "my express portfolio for 2019",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesus Mendoza",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  }
+}
