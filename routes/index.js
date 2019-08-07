@@ -5,7 +5,7 @@ const projects = jsonData.projects;
 
 // get request handler for root route
 router.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', {projects});
 });
 
 // get request handler for contact route
