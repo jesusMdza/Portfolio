@@ -9,7 +9,7 @@ block content
                     h3 #{val.project_name}
                     p.thumbnail-description #{val.thumbnail_description}
                         .img-container
-                             a(href=`/work/${val.id}`)
-                                img.large(src=`../static/images/${val.image_urls[0]}`, alt=`${val.image_urls[0]}`)
+                            a(href=`/work/${val.id}`)
+                                img.thumbnail(src=`../static/images/${val.image_urls[0]}`, alt=`${val.image_urls[0]}`)
                                 .overlay
                                     span.overlay-text View Project
