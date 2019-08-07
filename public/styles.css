@@ -299,10 +299,6 @@ svg:hover {
     filter: blur(8px) grayscale(1);
 }
 
-.float {
-    float: right;
-}
-
 .links svg {
     margin-top: 2em;
     margin-right: .8em;
@@ -376,10 +372,6 @@ svg:hover {
     .x-large {
         width: 100%;
         margin-top: 5em;
-    }
-
-    .float {
-        float: none;
     }
 }
 

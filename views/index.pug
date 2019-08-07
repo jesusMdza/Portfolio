@@ -16,7 +16,7 @@ block content
             div.indx-proj-container.group
                 h2 #{val.project_name}
                 p.indx-proj-description #{val.thumbnail_description}
-                    .img-main.float
+                    .img-main
                         a(href=`/work/${val.id}`)
                             img.large.cover(src=`../static/images/${val.image_urls[0]}`, alt=`${val.image_urls[0]}`)
                             .overlay
