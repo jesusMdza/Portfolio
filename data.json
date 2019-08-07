@@ -22,7 +22,7 @@
             "id": 2,
             "project_name": "Interactive Form",
             "thumbnail_description": "A form that processes and validates user data",
-            "project_description": "With the power of jQuery comes a functional and engaging 'fill-out' form for a conference event. The user can choose through a variety of options such as a t-shirt design, size and color, credit card info, workshop classes and more.",
+            "project_description": "With the power of jQuery comes a functional and engaging 'fill-out' form for a conference event. The user can select job role, t-shirt options, activity workshops and more.",
             "live_link": "https://jesusmdza.github.io/3-interactive-form/",
             "github_link": "https://github.com/jesusMdza/3-interactive-form",
             "image_urls": ["form-main.png","form-activity.png","form-err.png"]
@@ -48,7 +48,7 @@
         {
             "id": 5,
             "project_name": "Static Node and Express Site",
-            "thumbnail_description": "A portfolio created with NodeJS and the Express Framework",
+            "thumbnail_description": "A portfolio created with Node.js and the Express Framework",
             "project_description": "Utilizing Node.js, Express and Pug comes a static website of a basic portfolio. PUG allows HTML templates to be rendered dynamically by receiving data from a local JSON file and placing that data within each PUG template with the help of the Express Web Framework.",
             "live_link": "https://jm-static-node-express-site.herokuapp.com/",
             "github_link": "https://github.com/jesusMdza/6-static-node-and-express-site",
