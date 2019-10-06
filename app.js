@@ -18,7 +18,6 @@ app.get('*', (req, res, next) => {
     next(err);
 });
 
-
 // render "error.pug" and pass "err" object in locals "error" property
 app.use((err, req, res, next) => {
     console.log(err.message);

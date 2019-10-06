@@ -13,7 +13,6 @@ function myFunction() {
   }
 }
 
-
 // mobile-nav-menu
 function openMenu() {
     const popupMenu = document.querySelector('.popup-nav-menu');
