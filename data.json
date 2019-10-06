@@ -4,7 +4,7 @@
             "id": 0,
             "project_name": "React Gallery App",
             "thumbnail_description": "An app to search and generate a gallery of photos using ReactJS",
-            "project_description": "This simple react app returns a list of twenty-four photos from flickr by the user's input. The data returned is filtered by receiving only one photo per user to keep most photos displayed on the page unique. Keeping each functionality concern separated makes for easier maintenance and app expansion.",
+            "project_description": "This simple react app returns a list of twenty-four photos from flickr by the user's input. The data returned is filtered by receiving only one photo per user to keep most photos displayed on the page unique. All photos are placed in an eye appealing masonry-like grid. Keeping every functionality concern separated into components makes for easier maintenance and app expansion in the future.",
             "live_link": "https://brave-poincare-eefe40.netlify.com",
             "github_link": "https://github.com/jesusMdza/7-react-gallery-app",
             "image_urls": ["react-app-search.png","react-app-photos.png","react-app-err.png"]
