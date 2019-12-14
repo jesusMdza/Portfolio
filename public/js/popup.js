@@ -1,18 +1,3 @@
-window.onscroll = function() {myFunction()};
-
-// log message when scrolling
-function scrollFunction() {
-    console.log('you scrolled');
-}
-
-function myFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    console.log('you have scrolled further than 50 pixels');
-  } else {
-    console.log('you are scrolling less than 50 pixels');
-  }
-}
-
 // mobile-nav-menu
 function openMenu() {
     const popupMenu = document.querySelector('.popup-nav-menu');

@@ -429,7 +429,7 @@ svg:hover {
     }
 
     .section {
-        width: 93%;
+        width: 100%;
         padding-top: 40px;
     }
 
@@ -469,7 +469,7 @@ svg:hover {
     .indx-proj-description {
         font-size: 1em;
         font-weight: 400;
-        width: 85%;
+        width: 100%;
     }
 
     .indx-proj-description {
