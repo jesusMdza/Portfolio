@@ -318,6 +318,7 @@ svg:hover {
     font-weight: 900;
     font-size: 1.2em;
     text-transform: uppercase;
+    transition: .5s ease;
 }
 
 .project-links a:nth-of-type(2) div {
