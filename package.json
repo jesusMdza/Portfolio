@@ -4,7 +4,7 @@
   "description": "my express portfolio for 2019",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jesus Mendoza",
@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "heroku": "^7.27.1",
+    "nodemon": "^2.0.3",
     "pug": "^2.0.4"
   }
 }
