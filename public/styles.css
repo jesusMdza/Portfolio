@@ -1070,13 +1070,9 @@ button {
     #footer-container {
         font-size: .2em;
     }
-
-    .projects .indx-proj-container:nth-child(1n+2) {
-        padding-top: 32em;
-    }
  
     h1 {
-        font-size: 1.9rem;
+        font-size: 2.1rem;
     }
 
     h2 {
@@ -1084,12 +1080,12 @@ button {
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         line-height: 32px;
     }
 
     p {
-        font-size: .85rem;
+        font-size: 1rem;
         line-height: 2em;
     }
 
@@ -1144,6 +1140,10 @@ button {
         min-width: none;
     }
 
+    .projects .indx-proj-container:nth-child(1n+2) {
+        padding-top: 32em;
+    }
+
     .projects .indx-proj-container:nth-child(odd) .project-thumbnail {
         margin-right: 0;
     }
@@ -1155,6 +1155,11 @@ button {
     .projects .indx-proj-container:nth-child(even) .proj-details {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .proj-details p {
+        padding-top: .4em;
+        font-size: .9rem;
     }
 
     .links-intro {
@@ -1232,7 +1237,7 @@ button {
     .thumbnail-description,
     .project-description,
     .proj-details p {
-        font-size: .8rem;
+        font-size: .9rem;
         width: 100%;
     }
 
