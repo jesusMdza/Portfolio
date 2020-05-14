@@ -1,15 +1,36 @@
 extends layout
 
 block content
-        div.wrapper
-            div.container
-                h1 Work
+    div.wrapper
+        h1(data-aos='fade-right', data-aos-once="true", data-aos-duration="800") My Work
+        div.container.projects.work
             each val in projects
-                div.wrk-container
-                    h3 #{val.project_name}
-                    p.thumbnail-description #{val.thumbnail_description}
-                        .img-container
+                .indx-proj-container.group
+                    if val.bar_type === 'light'
+                        .project-thumbnail(data-aos='fade-right', data-aos-once="true", data-aos-delay="100", data-aos-duration="800")
                             a(href=`/work/${val.id}`)
-                                img.thumbnail(src=`../static/images/${val.image_urls[0]}`, alt=`${val.image_urls[0]}`)
-                                .overlay
-                                    span.overlay-text View Project
+                                .bar-light
+                                    .circle-light
+                                    .circle-light
+                                    .circle-light
+                                .project-thumbnail-image
+                                    img.large.cover(src=`/static/images/${val.thumbnail_url}`, alt=`${val.thumbnail_url}`)
+                    if val.bar_type === 'dark'
+                        .project-thumbnail(data-aos='fade-right', data-aos-once="true", data-aos-delay="100", data-aos-duration="800")
+                            a(href=`/work/${val.id}`)
+                                .bar-dark
+                                    .circle-dark
+                                    .circle-dark
+                                    .circle-dark
+                                .project-thumbnail-image
+                                    img.large.cover(src=`/static/images/${val.thumbnail_url}`, alt=`${val.thumbnail_url}`)
+                    .proj-details
+                        h3(data-aos='fade-right', data-aos-once="true", data-aos-delay="200", data-aos-duration="800") #{val.project_name}
+                        p(data-aos='fade-right', data-aos-once="true", data-aos-delay="300", data-aos-duration="800") #{val.thumbnail_description}
+                        div(data-aos='fade-right', data-aos-once="true", data-aos-delay="300", data-aos-duration="800")
+                            a(href=`/work/${val.id}`) 
+                                button.secondary
+                                    span See Work
+                                    svg(width='9', height='14', viewBox='0 0 9 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M2 12L7 7L2 2', stroke='#3A36FF', stroke-width='2.5', stroke-linecap='square')
+    include includes/footer.pug

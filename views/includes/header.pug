@@ -10,35 +10,24 @@ header
                                 path(fill-rule='evenodd', clip-rule='evenodd', d='M74.3264 20V55.625C74.3264 69.0869 63.4133 80 49.9514 80C37.2291 80 26.7832 70.2531 25.6738 57.8194L40.5698 55.6244L40.5764 55.625C40.5764 60.8027 44.7737 65 49.9514 65C55.1291 65 59.3264 60.8027 59.3264 55.625L59.3263 38.4181L44.3471 40.625L34.9514 27.6276L74.3264 20Z', fill='white')
                 ul
                     li
-                        div.hamburger(onclick="openMenu();")
+                        div.hamburger
                             svg(width='30', height='21', viewBox='0 0 30 21', fill='none', xmlns='http://www.w3.org/2000/svg')
                                 rect(x='8', y='9', width='22', height='3', fill='#3A36FF')
                                 path(fill-rule='evenodd', clip-rule='evenodd', d='M0 0H30V3H0V0Z', fill='#3A36FF')
                                 path(fill-rule='evenodd', clip-rule='evenodd', d='M0 18H30V21H0V18Z', fill='#3A36FF')
         .mobile-nav-container
-            ul
-                li
-                    a(href='/') Mendoza
-                .hamburger(onclick="openMenu();")
-                    div
-                        span.open(style='margin-bottom: 5px')
-                        span.open(style='margin-bottom: 4px')
             .popup-nav-menu
-                div
+                .nav-container
                     ul
                         li
-                            a(href='/' style='color: #fff;') Mendoza
-                        .popup-hamburger(onclick="closeMenu();")
-                            div
-                                span.close.x-one(style='margin-bottom: 5px')
-                                span.close.x-two(style='margin-bottom: 5px')
-                .popup-links
-                    ul
-                        li
-                            a(href='/work' style='color: #fff;') Work
-
-                        li
-                            a(href='/contact' style='color: #fff;') Contact
+                        ul
+                            li
+                .wrapper
+                    .container
+                        h1
+                            a(href='/work') Work
+                        h1
+                            a(href='/contact') Contact
 
 
                 

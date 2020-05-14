@@ -1,5 +1,7 @@
 const express = require('express');
 const router = express.Router();
+
+// Local modules
 const jsonData = require('../data.json');
 const projects = jsonData.projects;
 
@@ -17,9 +19,12 @@ router.get('/:id', (req, res) => {
     const projectDescription = projects[id].project_description;
     const liveLink = projects[id].live_link;
     const githubLink = projects[id].github_link;
+    const thumbnailUrl = projects[id].thumbnail_url;
     const imageUrls = projects[id].image_urls;
+    const technologies = projects[id].technologies;
+    const barType = projects[id].bar_type;
     
-    const templateData = {projects, title, projectDescription, liveLink, githubLink, imageUrls};
+    const templateData = {projects, title, projectDescription, liveLink, githubLink, thumbnailUrl, imageUrls, technologies, barType};
 
     res.render('project', templateData);
 });
