@@ -1070,6 +1070,10 @@ button {
     #footer-container {
         font-size: .2em;
     }
+
+    .projects .indx-proj-container:nth-child(1n+2) {
+        padding-top: 32em;
+    }
  
     h1 {
         font-size: 1.9rem;
