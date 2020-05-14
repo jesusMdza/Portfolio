@@ -1021,7 +1021,7 @@ button {
 
     .project-description {
         width: 100%;
-        padding-top: 4.5em;
+        padding-top: 2em;
     }
 
     .primary-large {
@@ -1216,11 +1216,11 @@ button {
 
     .slider {
         width: initial;
-        margin-top: 2.5rem;
+        margin-top: 2.7rem;
     }
     
     .container.projects.work {
-        margin-top: 5rem;
+        margin-top: 4rem;
     }
 
     .x-large {
@@ -1434,6 +1434,11 @@ button {
 }
 
 @media (max-width: 320px) {
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
     .section .project-links span {
         font-size: .9em;
         text-transform: uppercase;
@@ -1447,5 +1452,4 @@ button {
     .secondary-large {
         margin-right: 1.5em;
     }
-    
 }
