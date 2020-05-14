@@ -258,17 +258,24 @@ function scrollToProjects() {
 AOS.init();
 
 // project animations odd and even
-function loadFirstButton() {
+function forceAnimateElements() {
   const allProjects = document.querySelector('.container.projects.work .indx-proj-container');
 
   if (allProjects) {
     const firstButton = allProjects.lastElementChild.lastElementChild;
+    const firstParagraph = allProjects.lastElementChild.firstElementChild.nextSibling;
     firstButton.setAttribute('data-aos', 'fade-left');
     firstButton.setAttribute('data-aos-duration', '800');
     firstButton.setAttribute('data-aos-anchor', '.wrapper');
     firstButton.setAttribute('data-aos-anchor-placement', 'top-bottom');
     firstButton.classList.add('aos-init', 'aos-animate');
+
+    firstParagraph.setAttribute('data-aos', 'fade-left');
+    firstParagraph.setAttribute('data-aos-duration', '800');
+    firstParagraph.setAttribute('data-aos-anchor', '.wrapper');
+    firstParagraph.setAttribute('data-aos-anchor-placement', 'top-bottom');
+    firstParagraph.classList.add('aos-init', 'aos-animate');
   }
 }
 
-loadFirstButton();
+forceAnimateElements();
