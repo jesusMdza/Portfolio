@@ -1073,10 +1073,12 @@ button {
  
     h1 {
         font-size: 2.1rem;
+        font-weight: 800;
     }
 
     h2 {
-        font-size: 1.8rem
+        font-size: 1.8rem;
+        font-weight: 800;
     }
 
     h3 {
@@ -1283,12 +1285,12 @@ button {
     }
 
     .secondary span {
-        margin-right: 3px;
+        margin-right: 5px;
     }
 
     .secondary svg {
         width: 8px;
-        height: 12px;
+        height: 18px;
     }
 
     .technology-list {
