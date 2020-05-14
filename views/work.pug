@@ -5,7 +5,7 @@ block content
         h1(data-aos='fade-right', data-aos-once="true", data-aos-duration="800") My Work
         div.container.projects.work
             each val in projects
-                .indx-proj-container.group
+                .indx-proj-container
                     if val.bar_type === 'light'
                         .project-thumbnail(data-aos='fade-right', data-aos-once="true", data-aos-delay="100", data-aos-duration="800")
                             a(href=`/work/${val.id}`)
@@ -28,9 +28,8 @@ block content
                         h3(data-aos='fade-right', data-aos-once="true", data-aos-delay="200", data-aos-duration="800") #{val.project_name}
                         p(data-aos='fade-right', data-aos-once="true", data-aos-delay="300", data-aos-duration="800") #{val.thumbnail_description}
                         div(data-aos='fade-right', data-aos-once="true", data-aos-delay="300", data-aos-duration="800")
-                            a(href=`/work/${val.id}`) 
-                                button.secondary
-                                    span See Work
-                                    svg(width='9', height='14', viewBox='0 0 9 14', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                        path(d='M2 12L7 7L2 2', stroke='#3A36FF', stroke-width='2.5', stroke-linecap='square')
+                            a.secondary(href=`/work/${val.id}`) 
+                                span See Work
+                                svg(width='9', height='14', viewBox='0 0 9 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                    path(d='M2 12L7 7L2 2', stroke='#3A36FF', stroke-width='2.5', stroke-linecap='square')
     include includes/footer.pug
