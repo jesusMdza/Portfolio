@@ -1072,7 +1072,7 @@ button {
     }
  
     h1 {
-        font-size: 1.9rem;
+        font-size: 2rem;
     }
 
     h2 {
@@ -1080,12 +1080,12 @@ button {
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 32px;
     }
 
     p {
-        font-size: .85rem;
+        font-size: 1rem;
         line-height: 2em;
     }
 
@@ -1147,10 +1147,6 @@ button {
     .projects .indx-proj-container:nth-child(even) .project-thumbnail {
         margin-left: 0;
     }
-
-    /* .projects .indx-proj-container:nth-child(1n+2) {
-        padding-top: 4.5em;
-    } */
 
     .projects .indx-proj-container:nth-child(even) .proj-details {
         margin-left: 0;
@@ -1232,7 +1228,7 @@ button {
     .thumbnail-description,
     .project-description,
     .proj-details p {
-        font-size: .8rem;
+        font-size: 1rem;
         width: 100%;
     }
 
