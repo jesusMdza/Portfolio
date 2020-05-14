@@ -262,7 +262,7 @@ function loadFirstButton() {
   const allProjects = document.querySelector('.container.projects.work .indx-proj-container');
 
   if (allProjects) {
-    const firstButton = allProjects.lastElementChild.lastElementChild.firstElementChild;
+    const firstButton = allProjects.lastElementChild.lastElementChild;
     firstButton.setAttribute('data-aos', 'fade-left');
     firstButton.setAttribute('data-aos-duration', '800');
     firstButton.setAttribute('data-aos-anchor', '.wrapper');
