@@ -70,19 +70,16 @@ svg {
     vertical-align: bottom;
 }
 
+ul li,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 /**************** NAV STYLES *********************/
 
 .nav-container {
     height: 4.6875em;
 }
-
-/* .logo {
-    position: fixed;
-}
-
-.hamburger {
-    position: fixed;
-} */
 
 .logo svg{
     width: 4.6875em;
