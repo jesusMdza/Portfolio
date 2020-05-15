@@ -1327,8 +1327,9 @@ a {
         margin: 0 auto;
     }
 
-    .skills-container .content h2 {
-        margin-bottom: 2rem;
+    .skills-container .content h2,
+    .mobile-footer-heading h2 {
+        margin-bottom: 3rem;
     }
 
     .technology {
@@ -1382,7 +1383,6 @@ a {
     }
 
     .footer-content {
-        margin-top: 3rem;
         padding-top: 0;
         display: flex;
         flex-direction: column;
