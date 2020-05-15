@@ -415,7 +415,7 @@ a {
 
 .technology {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(minmax(100px, 1fr));
     row-gap: 6.25em;
     column-gap: 12.5em;
 }
@@ -525,7 +525,7 @@ a {
 .footer-content {
     margin-top: 8em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(minmax(400px, 1fr));
     row-gap: 54px;
 }
 
@@ -866,7 +866,7 @@ a {
     }
 
     .footer-content {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+        grid-template-columns: repeat(minmax(300px, 350px));
     }
 
     .footer-section:nth-child(0n+1) {
@@ -983,7 +983,7 @@ a {
     }
 
     .technology {
-        grid-template-columns: repeat(auto-fit, minmax(98px, 1fr));
+        grid-template-columns: repeat(minmax(98px, 1fr));
         row-gap: 10.25em;
         column-gap: 14.5em;
     }
@@ -998,7 +998,7 @@ a {
     }
 
     .footer-content {
-        grid-template-columns: repeat(auto-fit, minmax(245px, 277px));
+        grid-template-columns: repeat(minmax(245px, 277px));
     }
 
     .footer-section:nth-child(0n+1) {
@@ -1302,7 +1302,7 @@ a {
 
     .technology-list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(60px, 60px));
+        grid-template-columns: repeat(minmax(60px, 60px));
         row-gap: 5.25em;
         column-gap: 3.5em;
     }
