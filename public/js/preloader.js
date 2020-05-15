@@ -4,6 +4,8 @@ loadingMask.style.display = 'block';
 body.style.overflow = 'hidden';
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadingMask.style.display = 'none';
-  body.style.overflow = 'initial';
+  window.setTimeout(() => {
+    loadingMask.style.display = 'none';
+    body.style.overflow = 'initial';
+  }, 50);
 });
