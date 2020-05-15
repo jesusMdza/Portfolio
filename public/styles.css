@@ -91,6 +91,10 @@ a {
     height: 4.6875em;
 }
 
+.logo {
+    cursor: pointer;
+}
+
 .logo svg{
     width: 4.6875em;
     height: 4.6875em;
@@ -100,10 +104,13 @@ a {
     z-index: 22;
 }
 
+.hamburger {
+    cursor: pointer;
+}
+
 .hamburger svg {
     width: 3.75em;
     height: 3.75em;
-    cursor: pointer;
     z-index: 100;
 }
   
