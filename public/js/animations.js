@@ -1,7 +1,6 @@
 /************************ ANIMEJS ANIMATIONS ***************************/
 
 /*** NAV ANIMATIONS ***/
-const body = document.querySelector('body');
 const navContainer = document.querySelector('.nav-container');
 const popupNavMenu = document.querySelector('.popup-nav-menu');
 const logo = document.querySelector('.logo');
