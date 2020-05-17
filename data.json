@@ -30,7 +30,7 @@
             "id": 0,
             "project_name": "Course Education Platform",
             "thumbnail_description": "An app to create and explore courses",
-            "project_description": "Combining React, a homemade REST API, and Sequelize comes an education platform to create, share and discover courses.",
+            "project_description": "A React client that connects to a school database REST API back end. Users can discover courses, create accounts or sign in to existing accounts, and create, view, and modify courses.",
             "live_link": "https://course-education-platform.netlify.app",
             "github_link": "https://github.com/jesusMdza/10-full-stack-app-react-rest-api",
             "bar_type": "light",
