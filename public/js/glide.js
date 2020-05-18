@@ -1,7 +1,8 @@
 const glide1 = document.querySelector('.glide1');
-const firstGlideBullet = document.querySelector('.glide__bullets').firstElementChild;
 
 if (glide1) {
+  const firstGlideBullet = document.querySelector('.glide__bullets').firstElementChild;
+
   new Glide(glide1, {
     type: 'carousel',
     startAt: 0,
@@ -9,11 +10,13 @@ if (glide1) {
     gap: 0,
     animationDuration: 800,
   }).mount();
+
+
+  if (firstGlideBullet) {
+    // clicks slider button to center image
+    document.addEventListener('DOMContentLoaded', () => {
+      firstGlideBullet.click();
+    });
+  }
 }
 
-// clicks slider button to center image
-document.addEventListener('DOMContentLoaded', () => {
-  if (firstGlideBullet) {
-    firstGlideBullet.click();
-  }
-});
