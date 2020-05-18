@@ -70,8 +70,9 @@ svg {
     vertical-align: bottom;
 }
 
-ul li,
-a {
+ul li, 
+a,
+.scroll-down {
     -webkit-tap-highlight-color: transparent;
 }
 
