@@ -249,10 +249,6 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-function scrollToProjects() {
-  document.querySelector('.proj-details .secondary').scrollIntoView({ behavior: 'smooth', block: 'center' });
-}
-
 /************************ AOS ANIMATIONS ***************************/
 AOS.init();
 
