@@ -36,7 +36,7 @@
             "bar_type": "light",
             "thumbnail_url": "Thumbnail/fullstack-main.png",
             "image_urls": ["fullstack-main.png","fullstack-owner.png","fullstack-edit.png", "fullstack-view.png"],
-            "technologies": ["react", "css", "node", "express", "sequelize"] 
+            "technologies": ["css", "react", "node", "express", "sequelize"] 
         },
         {
             "id": 1,
@@ -60,7 +60,7 @@
             "bar_type": "light",
             "thumbnail_url": "Thumbnail/rains-home.png",
             "image_urls": ["rains-home.png","rains-product-details.png","rains-cart.png"],
-            "technologies": ["react", "css"] 
+            "technologies": ["css", "react"] 
         },
         {
             "id": 3,
@@ -72,7 +72,7 @@
             "bar_type": "dark",
             "thumbnail_url": "Thumbnail/react-app-search.png",
             "image_urls": ["react-app-search.png","react-app-photos.png","react-app-err.png"],
-            "technologies": ["react", "css"] 
+            "technologies": ["css", "react"] 
         },
         {
             "id": 4,
