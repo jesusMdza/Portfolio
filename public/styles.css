@@ -348,6 +348,14 @@ a {
     width: 100%;
 }
 
+.slider ul li {
+    max-width: 1560px;
+}
+
+.glide__slide--active {
+    max-width: 1560px;
+}
+
 .slider .x-large {
     box-shadow: none;
     margin-top: 0;
