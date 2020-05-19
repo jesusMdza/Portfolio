@@ -1457,6 +1457,7 @@ a,
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     
     .skills-container {
@@ -1483,7 +1484,7 @@ a,
     }
 
     .technology .technology-container {
-        width: 50%;
+        width: 47%;
     }
 
     .technology .technology-container {
