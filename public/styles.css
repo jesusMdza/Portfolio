@@ -1395,6 +1395,7 @@ a,
     }
 
     .footer-content {
+        margin-top: 2.6rem;
         padding-top: 0;
         display: flex;
         flex-direction: column;
