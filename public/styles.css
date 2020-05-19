@@ -431,7 +431,7 @@ a,
 
 .technology {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 6.25em;
     column-gap: 12.5em;
 }
@@ -995,7 +995,7 @@ a,
     }
 
     .technology {
-        grid-template-columns: repeat(auto-fill, minmax(98px, 1fr));
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         row-gap: 10.25em;
         column-gap: 14.5em;
     }
@@ -1078,6 +1078,18 @@ a,
 
     .section .project-links span {
         letter-spacing: 1.6px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 767px) {
+    .technology {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .technology {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
