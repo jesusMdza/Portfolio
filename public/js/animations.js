@@ -35,19 +35,13 @@ hamburger.addEventListener('click', () => {
   if (!menuOpen && popupNavMenu.getAttribute('style').includes('transform: translateX(-100%);') && secondLink.getAttribute('style').includes('transform: translateX(-10%)')) {
     hamburger.classList.add('open');
     menuOpen = true;
-    body.style.overflow = 'hidden';
-    document.ontouchmove = (e) => {
-      e.preventDefault();
-    }
+    disableScroll();
     scrollToTop();
     openMenu();
   } else if (menuOpen && popupNavMenu.getAttribute('style').includes('transform: translateX(0%);') && secondLink.getAttribute('style').includes('transform: translateX(0%)')) {
     hamburger.classList.remove('open');
     menuOpen = false;
-    body.style.overflow = 'initial';
-    document.ontouchmove = (e) => {
-      return true;
-    }
+    enableScroll();
     closeMenu();
   }
 });
@@ -247,11 +241,6 @@ function closeMenu() {
   });
 }
 
-function scrollToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
 /************************ AOS ANIMATIONS ***************************/
 AOS.init();
 
@@ -277,3 +266,22 @@ function forceAnimateElements() {
 }
 
 forceAnimateElements();
+
+/************************** ADDITIONAL FUNCTIONS **********************/
+
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+disableScroll = () => {
+  document.ontouchmove = (e) => {
+    e.preventDefault();
+  }
+}
+
+enableScroll = () => {
+  document.ontouchmove = (e) => {
+    return true;
+  }
+}
