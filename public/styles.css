@@ -1547,7 +1547,8 @@ a,
     }
 }
 
-@media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0) { 
+/*********************** IOS SAFARI STYLES **************************/
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
     @media (min-width: 320px) and (max-width: 767px) {
         .glide__bullets {
             bottom: -3em;
