@@ -1549,6 +1549,20 @@ a,
 
 @media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0) { 
     @media (min-width: 320px) and (max-width: 767px) {
+        .glide__bullets {
+            bottom: -3em;
+        }
+
+        .glide__bullet {
+            width: 1em;
+            height: 1em;
+        }
+
+        .technology {
+            row-gap: 4rem;
+            column-gap: 2rem;
+        }
+
         .projects .indx-proj-container:nth-child(1n+2) {
             padding-top: 11em;
         }
