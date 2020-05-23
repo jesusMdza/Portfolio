@@ -275,12 +275,18 @@ function scrollToTop() {
 }
 
 disableScroll = () => {
+  body.style.overflow = 'hidden';
+
+  // iOS disable scroll
   document.ontouchmove = (e) => {
     e.preventDefault();
   }
 }
 
 enableScroll = () => {
+  body.style.overflow = 'initial';
+  
+  // iOS enable scroll
   document.ontouchmove = (e) => {
     return true;
   }
