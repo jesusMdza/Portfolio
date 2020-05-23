@@ -33,18 +33,21 @@ anime({
 
 hamburger.addEventListener('click', () => {
   if (!menuOpen && popupNavMenu.getAttribute('style').includes('transform: translateX(-100%);') && secondLink.getAttribute('style').includes('transform: translateX(-10%)')) {
-    // console.log(popupNavMenu.getAttribute('style').includes('transform: translateX(-100%);'));
-    // console.log(firstLink.getAttribute('style').includes('transform: translateX(-10%)'));
     hamburger.classList.add('open');
     menuOpen = true;
     body.style.overflow = 'hidden';
+    document.ontouchmove = (e) => {
+      e.preventDefault();
+    }
     scrollToTop();
     openMenu();
   } else if (menuOpen && popupNavMenu.getAttribute('style').includes('transform: translateX(0%);') && secondLink.getAttribute('style').includes('transform: translateX(0%)')) {
-    // console.log(popupNavMenu.getAttribute('style').includes('transform: translateX(0%);'));
     hamburger.classList.remove('open');
     menuOpen = false;
     body.style.overflow = 'initial';
+    document.ontouchmove = (e) => {
+      return true;
+    }
     closeMenu();
   }
 });
