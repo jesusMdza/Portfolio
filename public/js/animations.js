@@ -70,7 +70,7 @@ function openMenu() {
   anime({
     targets: firstBar,
     keyframes: [
-      {translateY: '.55em'},
+      {translateY: '43%'},
       {fill: '#3A36FF'}
     ],
     easing: 'cubicBezier(.32,.4,0,.96)',
@@ -89,7 +89,7 @@ function openMenu() {
   anime({
     targets: lastBar,
     keyframes: [
-      {translateY: '-.55em'},
+      {translateY: '-43%'},
       {fill: '#3A36FF'}
     ],
     easing: 'cubicBezier(.32,.4,0,.96)',
@@ -131,7 +131,7 @@ function openMenu() {
   anime({
     targets: firstBar,
     keyframes: [
-      {translateY: '.55em'},
+      {translateY: '43%'},
       {fill: '#FFF'}
     ],
     easing: 'cubicBezier(.32,.4,0,.96)',
@@ -151,7 +151,7 @@ function openMenu() {
   anime({
     targets: lastBar,
     keyframes: [
-      {translateY: '-.55em'},
+      {translateY: '-43%'},
       {fill: '#FFF'}
     ],
     easing: 'cubicBezier(.32,.4,0,.96)',
@@ -193,7 +193,7 @@ function closeMenu() {
     targets: firstBar,
     keyframes: [
       {fill: '#3A36FF'},
-      {translateY: '0em'}
+      {translateY: '0%'}
     ],
     easing: 'cubicBezier(.32,.4,0,.96)',
     duration: 400
@@ -203,7 +203,7 @@ function closeMenu() {
     targets: middleBar,
     keyframes: [
       {fill: '#3A36FF'},
-      {translateY: '0em'}
+      {translateY: '0%'}
     ],
     easing: 'cubicBezier(.32,.4,0,.96)',
     duration: 400
@@ -213,7 +213,7 @@ function closeMenu() {
     targets: lastBar,
     keyframes: [
       {fill: '#3A36FF'},
-      {translateY: '0em'}
+      {translateY: '0%'}
     ],
     easing: 'cubicBezier(.32,.4,0,.96)',
     duration: 400
