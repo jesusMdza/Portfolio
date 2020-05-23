@@ -1030,50 +1030,9 @@ a,
 
 @media (max-width: 850px) {
 
-    .project-details-section {
-        display: block;
-    }
-
-    .technology-list {
-        margin-bottom: 2.5rem;
-    }
-
     .project-description {
         width: 100%;
         padding-top: 2em;
-    }
-
-    .primary-large {
-        width: 100%;
-        font-size: .7rem;
-        border: 3px solid #3A36FF;
-        padding: 8px 10px;
-        letter-spacing: 1.5px;
-        text-align: center;
-    }
-
-    .primary-large svg {
-        width: 0.625rem;
-        height: 1.3125rem;
-    }
-
-    .secondary-large {
-        width: 100%;
-        font-size: .7rem;
-        border: 3px solid #3A36FF;
-        padding: 8px 10px;
-        letter-spacing: 1.5px;
-        text-align: center;
-    }
-
-    .secondary-large svg {
-        width: 1.3125rem;
-        height: 1.3125rem;
-    }
-
-    .project-links {
-        display: flex;
-        justify-content: space-between;
     }
 
     .section .project-links span {
@@ -1312,11 +1271,49 @@ a,
         height: 18px;
     }
 
+    .project-links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .project-details-section {
+        display: block;
+    }
+
+    .primary-large {
+        width: 100%;
+        font-size: .7rem;
+        border: 3px solid #3A36FF;
+        padding: 8px 10px;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+
+    .primary-large svg {
+        width: 0.625rem;
+        height: 1.3125rem;
+    }
+
+    .secondary-large {
+        width: 100%;
+        font-size: .7rem;
+        border: 3px solid #3A36FF;
+        padding: 8px 10px;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+
+    .secondary-large svg {
+        width: 1.3125rem;
+        height: 1.3125rem;
+    }
+
     .technology-list {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(60px, 60px));
         row-gap: 5.25em;
         column-gap: 3.5em;
+        margin-bottom: 2.5rem;
     }
 
     .technology-container-silver svg {
@@ -1511,5 +1508,37 @@ a,
 
     .secondary-large {
         margin-right: 1.5em;
+    }
+}
+
+
+/************** MOZILLA STYLES *******************/
+@-moz-document url-prefix() { 
+    @media (min-width: 768px) and (max-width: 1200px) {
+        .primary-large, .secondary-large {
+            border: 0.25em solid #3A36FF;
+        }
+
+        .primary-large:hover {
+            border: 0.25em solid #171666;
+        }
+    
+        .secondary-large:hover {
+            border: 0.25em solid #211F91;
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        .footer-content {
+            row-gap: 0;
+        }
+    }
+
+    /* Row and column gaps set to 0 due to mozilla not removing styles even though grid was changed to flexbox at this breakpoint */
+    @media (min-width: 320px) and (max-width: 425px) {
+        .technology {
+            row-gap: 0;
+            column-gap: 0;
+        }
     }
 }
