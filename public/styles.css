@@ -1514,13 +1514,11 @@ a,
 
 /************** MOZILLA STYLES *******************/
 @-moz-document url-prefix() { 
-
-    ul li, 
-    a,
-    .scroll-down {
-        -webkit-tap-highlight-color: transparent;
+ 
+    a::-moz-focus-inner {
+        border: 0;
     }
-    
+
     @media (min-width: 768px) and (max-width: 1200px) {
         .primary-large, .secondary-large {
             border: 0.25em solid #3A36FF;
