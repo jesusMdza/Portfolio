@@ -7,6 +7,13 @@ html(lang="en")
         link(href='https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap', rel='stylesheet')
         meta(name="viewport" content="width=device-width, initial-scale=1")
         meta(name='format-detection', content='telephone=no')
+        style.
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                *::-ms-backdrop, [data-aos^=fade][data-aos^=fade],[data-aos^=zoom][data-aos^=zoom] {
+                    opacity: 1; 
+                    transform: none;
+                } 
+            }
     body
         div#loading-mask(style="display: block;")
         include includes/header.pug

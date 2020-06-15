@@ -31,14 +31,14 @@ anime({
   easing: 'cubicBezier(.32,.4,0,.96)',
 });
 
-hamburger.addEventListener('click', () => {
-  if (!menuOpen && popupNavMenu.getAttribute('style').includes('transform: translateX(-100%);') && secondLink.getAttribute('style').includes('transform: translateX(-10%)')) {
+hamburger.addEventListener('click', function() {
+  if (!menuOpen && popupNavMenu.getAttribute('style').search('transform: translateX(-100%);') && secondLink.getAttribute('style').search('transform: translateX(-10%)')) {
     hamburger.classList.add('open');
     menuOpen = true;
     disableScroll();
     scrollToTop();
     openMenu();
-  } else if (menuOpen && popupNavMenu.getAttribute('style').includes('transform: translateX(0%);') && secondLink.getAttribute('style').includes('transform: translateX(0%)')) {
+  } else if (menuOpen && popupNavMenu.getAttribute('style').search('transform: translateX(0%);') && secondLink.getAttribute('style').search('transform: translateX(0%)')) {
     hamburger.classList.remove('open');
     menuOpen = false;
     enableScroll();
@@ -274,20 +274,21 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-disableScroll = () => {
+disableScroll = function() {
+  console.log('disabling scroll');
   body.style.overflow = 'hidden';
 
   // iOS disable scroll
-  document.ontouchmove = (e) => {
+  document.ontouchmove = function(e) {
     e.preventDefault();
   }
 }
 
-enableScroll = () => {
-  body.style.overflow = 'initial';
+enableScroll = function() {
+  body.style.overflow = 'visible';
   
   // iOS enable scroll
-  document.ontouchmove = (e) => {
+  document.ontouchmove = function(e) {
     return true;
   }
 }

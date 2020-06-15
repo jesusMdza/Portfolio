@@ -14,7 +14,7 @@ if (glide1) {
 
   if (firstGlideBullet) {
     // clicks slider button to center image
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', function() {
       firstGlideBullet.click();
     });
   }

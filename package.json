@@ -18,5 +18,10 @@
     "nodemon": "^2.0.3",
     "pug": "^2.0.4",
     "scroll-into-view": "^1.14.2"
-  }
+  },
+  "development": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ]
 }
